@@ -6,7 +6,7 @@ html {
 }
 
 :root {
-	--main-color:#fa5b0f:
+	--main-color:#FFB400;
 }
 body {
   /* background-color: #151515; */
@@ -77,7 +77,7 @@ aside .logo img {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  border: 7px solid #fa5b0f;
+  border: 7px solid var(--main-color);
 }
 
 aside .logo {
@@ -85,6 +85,7 @@ aside .logo {
   flex-direction: column;
   align-items: center;
   border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+  padding-bottom: 50px;
 }
 
 aside .logo p {
@@ -139,7 +140,7 @@ aside .links-of-page ul li:hover {
 
 aside .links-of-page ul li a:hover,
 aside .links-of-page ul li a:hover i {
-  color: #fa5b0f;
+  color: var(--main-color);
 }
 
 .landing {
@@ -162,18 +163,15 @@ aside .links-of-page ul li a:hover i {
   }
 
   aside.active {
-    /*transform: rotateY(-90deg);
-        -webkit-transform: t;
-        -moz-transform: t;
-        -ms-transform: t;
-        -o-transform: t;
-        transform-origin: left center;
-        */
-    transform: translateX(-400px);
-  }
+    transform: translateX(-800px);
+    -webkit-transform: translateX(-800px);
+    -moz-transform: translateX(-800px);
+    -ms-transform: translateX(-800px);
+    -o-transform: translateX(-800px);
+}
 
   aside {
-    width: 185%;
+    width: 191%;
   }
 
   .right .icon {
@@ -181,14 +179,32 @@ aside .links-of-page ul li a:hover i {
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 12px;
+    right: -165px;
     top: 20px;
 		z-index: 99999999999;
+   
   }
 }
 
 .right {
 	position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 251px;
+}
+
+.right .img {
+  border: 9px solid var(--main-color);
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--main-color);
+}
+
+.right .img img {
+  width: 300px;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
 }
 
 #type-text {
@@ -197,10 +213,10 @@ aside .links-of-page ul li a:hover i {
   color: #fff;
 	position: absolute;
 	left: -567px;
-	top: 42%;
+	top: 40%;
 	font-weight: bold;
 	padding: 20px;
-	padding-right: 170px;
+	padding-right: 400px;
 	line-height: 1.8;
 	
 }
@@ -210,11 +226,12 @@ aside .links-of-page ul li a:hover i {
 
 
 	#type-text {
-		font-size: 45px;
-		left: -141px;
-		top: 22%;
-		padding-right: 10px;
-	}
+    font-size: 45px;
+    left: -111px;
+    top: 13%;
+    padding-right: 10px;
+    text-align: center;
+}
 
 }
 
@@ -222,7 +239,7 @@ aside .links-of-page ul li a:hover i {
 #type-text2 {
   font-size: 20px;
   font-family: "Solitreo", cursive;
-  color: #fa5b0f;
+  color: var(--main-color);
 	/* position: absolute;
 	left: -567px;
 	top: 66%; */
@@ -243,4 +260,7 @@ aside .links-of-page ul li a:hover i {
 		/* padding-right: 5px; */
 	}
 
+  .right .img  {
+    display: none;
+  }
 }
