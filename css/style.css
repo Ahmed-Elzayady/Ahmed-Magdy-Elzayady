@@ -163,11 +163,11 @@ aside .links-of-page ul li a:hover i {
   }
 
   aside.active {
-    transform: translateX(-800px);
-    -webkit-transform: translateX(-800px);
-    -moz-transform: translateX(-800px);
-    -ms-transform: translateX(-800px);
-    -o-transform: translateX(-800px);
+    transform: translateX(-850px);
+    -webkit-transform: translateX(-850px);
+    -moz-transform: translateX(-850px);
+    -ms-transform: translateX(-850px);
+    -o-transform: translateX(-850px);
 }
 
   aside {
@@ -179,7 +179,7 @@ aside .links-of-page ul li a:hover i {
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: -165px;
+    right: -176px;
     top: 20px;
 		z-index: 99999999999;
    
