@@ -6,7 +6,7 @@ html {
 }
 
 :root {
-	--main-color:#FFB400;
+  --main-color: #ffb400;
 }
 body {
   /* background-color: #151515; */
@@ -64,8 +64,8 @@ aside {
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
-	position: relative;
-	z-index: 99999999;
+  position: relative;
+  z-index: 99999999;
 }
 
 aside .logo img {
@@ -163,11 +163,11 @@ aside .links-of-page ul li a:hover i {
   }
 
   aside.active {
-    transform: translateX(-850px);
-    -webkit-transform: translateX(-850px);
-    -moz-transform: translateX(-850px);
-    -ms-transform: translateX(-850px);
-    -o-transform: translateX(-850px);
+    transform: translateX(-360px);
+    -webkit-transform: translateX(-360px);
+    -moz-transform: translateX(-360px);
+    -ms-transform: translateX(-360px);
+    -o-transform: translateX(-360px);
 }
 
   aside {
@@ -181,13 +181,12 @@ aside .links-of-page ul li a:hover i {
     position: absolute;
     right: -176px;
     top: 20px;
-		z-index: 99999999999;
-   
+    z-index: 99999999999;
   }
 }
 
 .right {
-	position: relative;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -211,56 +210,47 @@ aside .links-of-page ul li a:hover i {
   font-size: 60px;
   font-family: "Solitreo", cursive;
   color: #fff;
-	position: absolute;
-	left: -567px;
-	top: 40%;
-	font-weight: bold;
-	padding: 20px;
-	padding-right: 400px;
-	line-height: 1.8;
-	
+  position: absolute;
+  left: -567px;
+  top: 40%;
+  font-weight: bold;
+  padding: 20px;
+  padding-right: 400px;
+  line-height: 1.8;
 }
 
-@media(max-width: 800px) {
-
-
-
-	#type-text {
+@media (max-width: 800px) {
+  #type-text {
     font-size: 45px;
     left: -111px;
     top: 13%;
     padding-right: 10px;
     text-align: center;
+  }
 }
-
-}
-
 
 #type-text2 {
   font-size: 20px;
   font-family: "Solitreo", cursive;
   color: var(--main-color);
-	/* position: absolute;
+  /* position: absolute;
 	left: -567px;
 	top: 66%; */
-	font-weight: bold;
-	/* padding: 20px; */
-	padding: 42px;
-	
+  font-weight: bold;
+  /* padding: 20px; */
+  padding: 42px;
 }
 
-@media(max-width: 800px) {
-
-
-
-	#type-text2 {
-		font-size: 20px;
-		/* left: -141px;
+@media (max-width: 800px) {
+  #type-text2 {
+    font-size: 20px;
+    /* left: -141px;
 		top: 60%; */
-		/* padding-right: 5px; */
-	}
+    /* padding-right: 5px; */
+    text-align: center;
+  }
 
-  .right .img  {
+  .right .img {
     display: none;
   }
 }
