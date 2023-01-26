@@ -10,6 +10,7 @@ html {
 }
 body {
   /* background-color: #151515; */
+  height: 200vh;
 }
 
 ::selection {
@@ -172,7 +173,7 @@ aside .links-of-page ul li a:hover i {
 }
 
   aside {
-    width: 207%;
+    width: 208%;
   }
 
   .right .icon {
