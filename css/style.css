@@ -64,8 +64,9 @@ aside {
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
-  position: relative;
   z-index: 99999999;
+  position: fixed;
+
 }
 
 aside .logo img {
@@ -163,15 +164,15 @@ aside .links-of-page ul li a:hover i {
   }
 
   aside.active {
-    transform: translateX(-360px);
-    -webkit-transform: translateX(-360px);
-    -moz-transform: translateX(-360px);
-    -ms-transform: translateX(-360px);
-    -o-transform: translateX(-360px);
+    transform: translateX(-450px);
+    -webkit-transform: translateX(-450px);
+    -moz-transform: translateX(-450px);
+    -ms-transform: translateX(-450px);
+    -o-transform: translateX(-450px);
 }
 
   aside {
-    width: 191%;
+    width: 207%;
   }
 
   .right .icon {
@@ -179,7 +180,7 @@ aside .links-of-page ul li a:hover i {
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: -176px;
+    right: -200px;
     top: 20px;
     z-index: 99999999999;
   }
@@ -191,14 +192,21 @@ aside .links-of-page ul li a:hover i {
   justify-content: space-between;
   align-items: center;
   margin-right: 251px;
+  height: 100vh;
 }
 
 .right .img {
-  border: 9px solid var(--main-color);
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: var(--main-color);
+    border: 9px solid var(--main-color);
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--main-color);
+    min-width: 300px;
+    max-width: 300px;
+    position: absolute;
+    left: 1416px;
+    top: 31%;
 }
+
 
 .right .img img {
   width: 300px;
@@ -211,12 +219,13 @@ aside .links-of-page ul li a:hover i {
   font-family: "Solitreo", cursive;
   color: #fff;
   position: absolute;
-  left: -567px;
+  left: 500px;
   top: 40%;
   font-weight: bold;
-  padding: 20px;
+  /* padding: 20px; */
   padding-right: 400px;
   line-height: 1.8;
+  width: 800px;
 }
 
 @media (max-width: 800px) {
@@ -226,6 +235,7 @@ aside .links-of-page ul li a:hover i {
     top: 13%;
     padding-right: 10px;
     text-align: center;
+    padding: 20px;
   }
 }
 
@@ -253,4 +263,18 @@ aside .links-of-page ul li a:hover i {
   .right .img {
     display: none;
   }
+
+  
+aside {
+  position: relative;
+}
+#type-text {
+  width: auto;
+}
+
+.right {
+  height: fit-content;
+}
+
+
 }
